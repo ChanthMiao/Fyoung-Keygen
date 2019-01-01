@@ -36,7 +36,7 @@ json_get_vars ipv6 demand keepalive keepalive_adaptive username password pppd_op
 Add:
 
 ```
-username=`/usr/sbin/fyoung $username $password`
+username=$(/usr/sbin/fyoung $username $password)
 ```
 
 When dialing, add `tyfy` before your username(if not, it will return original username).
